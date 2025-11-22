@@ -77,7 +77,7 @@ int main(int argc, char **argv)
 
     // Compute the result with a direct matrix-vector multiplication
     { ScopeClock timer("Direct in ");
-    //fmmtl::direct(K, points, charges, exact);
+      fmmtl::direct(K, points, charges, exact);
     }
 
     double tot_error_sq = 0;
